@@ -37,7 +37,6 @@ modelSpecs:
       webSearch: true
       default: true
       description: "ProcrastiNOPE"
-      iconURL: "https://example.com/icon.png"
       preset:
         endpoint: "anthropic"
         model: "claude-sonnet-4-5-20250929"
