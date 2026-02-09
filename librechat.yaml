@@ -9,7 +9,7 @@ cache: true
 
 # Custom interface configuration
 interface:
-  customWelcome: "What's up?"
+  customWelcome: "Hey {{user.name}}! Welcome to jolt.ai!"
   fileSearch: false
   endpointsMenu: false
   modelSelect: false
@@ -43,12 +43,11 @@ modelSpecs:
         model: "claude-sonnet-4-5-20250929"
         maxContextTokens: 128000 # Maximum context tokens
         max_tokens: 4096 # Maximum output tokens
-        modelLabel: "Claude Sonnet 4.5"
+        modelLabel: "Jolt"
         promptCache: true
         thinking: false
         greeting: |
-          This assistant creates meeting notes based on transcripts of Teams recordings.
-          To start, simply paste the transcript into the chat box.
+          Time to procrasti-NOPE ;)
         promptPrefix: |
           I will talk to you when I’m procrastinating or have low energy. Give specific suggestions of actions to immediately do to improve my mood or get productive.
           Do not suggest I write things down, think of things on my own or make lists. Do not allow me to do unproductive things. Do not provide me with options or make me choose. Just concrete suggestions or commands of what to do.
