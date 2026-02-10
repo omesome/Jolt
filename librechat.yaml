@@ -32,10 +32,9 @@ modelSpecs:
   enforce: true
   prioritize: true
   list:
-    - name: "jolt-fast"
-      label: "Jolty ⚡️"
+    - name: "claude-haiku"
+      label: "Jolt Haiku ⚡️"
       description: "fast and efficient"
-      webSearch: true
       default: true
       preset:
         endpoint: "anthropic"
@@ -45,7 +44,7 @@ modelSpecs:
         modelLabel: "Jolty"
         promptCache: true
         thinking: false
-        greeting: Time to procrasti-nope :)
+        greeting: Time to procrasti-nope ⚡️
         promptPrefix: &prefix |
           You are supposed to keep me from procrastinating. 
           Give specific suggestions to do to improve my mood or get productive.
@@ -57,9 +56,8 @@ modelSpecs:
           If I say i’ll do it, wait for me to check in after i’ve done it, then congratulate me and ask me how I feel, before offering more help.
           You can ask me about a goal i want to work on and push me to do it in small steps, without accepting no or wanting to do other things.
           Only ever suggest one action at a time.
-    - name: "jolt-slow"
-      label: "Jolt 💡"
-      webSearch: true
+    - name: "claude-sonnet"
+      label: "Jolt Sonnet 💡"
       description: "Smart and talkative"
       preset:
         endpoint: "anthropic"
@@ -69,7 +67,33 @@ modelSpecs:
         modelLabel: "Jolt"
         promptCache: true
         thinking: false
-        greeting: Time to procrasti-nope ;)
+        greeting: Time to procrasti-nope 💡
+        promptPrefix: *prefix
+    - name: "chatGPT"
+      label: "JoltGPT 💡"
+      description: "Smart and talkative"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-5.2"
+        maxContextTokens: 128000 # Maximum context tokens
+        max_tokens: 4096 # Maximum output tokens
+        modelLabel: "Jolt"
+        promptCache: true
+        thinking: false
+        greeting: Time to procrasti-nope 💡
+        promptPrefix: *prefix
+    - name: "chatGPT"
+      label: "JoltGPT mini ⚡️"
+      description: "Smart and talkative"
+      preset:
+        endpoint: "openAI"
+        model: "gpt-5-mini"
+        maxContextTokens: 128000 # Maximum context tokens
+        max_tokens: 4096 # Maximum output tokens
+        modelLabel: "Jolt"
+        promptCache: true
+        thinking: false
+        greeting: Time to procrasti-nope ⚡️
         promptPrefix: *prefix
    
 
