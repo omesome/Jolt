@@ -74,7 +74,7 @@ modelSpecs:
       description: "Smart and talkative"
       preset:
         endpoint: "openAI"
-        model: "gpt-5.2"
+        model: "gpt-5"
         maxContextTokens: 128000 # Maximum context tokens
         max_tokens: 4096 # Maximum output tokens
         modelLabel: "Jolt"
